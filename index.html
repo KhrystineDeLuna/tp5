@@ -9,27 +9,32 @@
   <meta name="author" content="Khrystine Raymond">
 
   <link rel="stylesheet" href="styles.css">
+  
+  <script src="scripts.js" defer></script>
+  <script>
+    // in-page JavaScript here
+  </script>
 
-  <title> Tiny Project 4 - Responsive Recipe </title>
+  <title> Tiny Project 5 - Interactive Recipe </title>
 </head>
 
 
 <body>
 
-
+ 
   <header>
-    <h1>Righteous Raspberry Brownies</h1>
+    <h1 id="recipeName">Righteous Raspberry Brownies</h1>
   </header>
 
   <nav>
-  <ul>
-    <li><a href="https://www.allrecipes.com/recipe/283483/almond-ricotta-cake/">Almond Riccotta Cake</a></li>
-    <li><a href="https://www.allrecipes.com/recipe/71537/banoffee-pavlova/">Banoffee Pavlova</a></li>
-    <li><a href="https://www.allrecipes.com/recipe/139069/boterkoek-dutch-butter-cake/">Boterkoek</a></li>
-  </ul>
-</nav>
-  
-  
+    <ul>
+      <li><a href="https://www.allrecipes.com/recipe/283483/almond-ricotta-cake/">Almond Riccotta Cake</a></li>
+      <li><a href="https://www.allrecipes.com/recipe/71537/banoffee-pavlova/">Banoffee Pavlova</a></li>
+      <li><a href="https://www.allrecipes.com/recipe/139069/boterkoek-dutch-butter-cake/">Boterkoek</a></li>
+    </ul>
+  </nav>
+
+
   <div id="equipment" class="recipe">
     <h4>Kitchen Equipment</h4>
     <ul>
@@ -58,25 +63,31 @@
   <div id="directions" class="recipe">
     <h4>Directions</h4>
     <ol>
-      <li>Step 1
+      <li id="steps">Step 1</li>
         <ul>
           <li>Preheat oven to 350 degrees F (175 degrees C). </li>
           <li>Grease a 12x9-inch baking dish and dust with 1 teaspoon cocoa powder.
           </li>
         </ul>
-        <li>Step 2
+      <li id="steps">Step 2</li>
           <ul>
             <li>Beat eggs, superfine sugar, butter, flour, chocolate chunks, and 3/4 cups cocoa powder together with an electric hand mixer in a large mixing bowl until smooth.</li>
             <li>Fold raspberries gently into the batter; spoon into the prepared baking dish.</li>
           </ul>
-          <li>Step 3
+      <li id="steps">Step 3</li>
             <ul>
               <li>Bake in the preheated oven until a toothpick inserted into the center comes out clean and the top is a bit crusty, 40 to 45 minutes.</li>
               <li>Let cool completely before cutting.</li>
             </ul>
     </ol>
+      
   </div>
 
+  <div id="enjoy" class="full">
+  </div>
+  
+ <div class="full">
   <footer>
     <p>(Original recipe at <a href="https://www.allrecipes.com/recipe/228273/righteous-raspberry-brownies/">AllRecipes.com</a>.)</p>
   </footer>
+  </div>
