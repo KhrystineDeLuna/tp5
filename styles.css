@@ -1,26 +1,3 @@
-/* collapse 3 to 1 col at 700px  */
-
-@media screen and (max-width: 700px) {
-  .recipe {
-    width: 100%;
-  }
-  nav {
-    font-size: .85em;
-    padding-top: .45em; 
-  }
-}
-
-
-/* removes nav, alters div col styling, positions footer at very small screen sizes  */
-@media screen and (max-width: 575px) {
-  nav {
-    display: none;
-  }
-  div {
-    border: solid .1em;
-    border-radius: .35em;
-  }
-}
 
 
 /* base styling */
@@ -39,7 +16,7 @@ body {
 #recipeName {
   margin-top: 0;
   font-family: 'Amatic SC', cursive;
-  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+  text-shadow: 0 0 3px #fff, 0 0 5px #c4c4ff;
   text-align: center;
 }
 
@@ -50,21 +27,29 @@ body {
 
 /* styling nav */
 nav { 
-  background: #fff; 
-  opacity: .8;
-  width: 99.99%; 
+  color: #fff;
+  font-weight: 900; 
+  border-radius: .5vw;
 }
 
 nav ul {
   list-style-type: none;
-  margin: 2px;
-  padding: 15px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; 
 }
 
 nav li {
+  float: left; 
   color: #5B077D;
-  display: inline;
   margin: .5em;
+}
+
+nav li a { 
+  display: block; 
+  padding: 8px; 
+  background-color: #fff;
+  opacity: .8;
 }
 
 nav a:hover {
@@ -73,50 +58,116 @@ nav a:hover {
   text-shadow: 0 0 .75px #d91a96; 
 }
 
- 
+/* styling div */
 
-/* full screen styling */
 .full { 
-  width: 99.96%;
-  padding-top: 5px; 
-}
-
-/* styling - 3 column div */
-div {
-  display: inline-block;
-  float: left;
-  width: 33.3%;
-  background: #fff;
-  opacity: .8; 
+  background-color: #fff; 
+  float: left; 
+  width: 95.5vw; 
+  text-align: center; 
+  overflow: hidden; 
 }
 
 
+div { 
+  background-color: #fff; 
+  float: left; 
+}
 
 li {
   font-family: Georgia;
 }
 
 
-
-/* directions sub steps */
-#directions ol {
-  list-style-type: upper-roman;
-}
-
-#steps { 
-  font-weight: 900; 
-}
-
 h4 {
   font-family: 'Seymour One', sans-serif;
-  text-decoration: underline;
-  text-shadow: 0 0 .75px #FF0000, 0 0 1.75px #0000FF;
   padding: .25em; 
   margin-left: .25em; 
   text-align: center;
+}
+
+
+#column1 {
+  background-color: #fff;
+  opacity: .8; 
+  height: 5vh;
+  width: 25%;
+  float: left;
+  border-radius: 5px;
+  display: inline-block;
+  overflow: hidden;
   
 }
 
-footer {
-  text-align: center; 
+#column2 {
+  background-color: #fff;
+  opacity: .8; 
+  height: 5vh;
+  width: 25%;
+  float: left;
+  border-radius: 5px;
+  display: inline-block;
+  overflow: hidden;
 }
+
+#column3 {
+  background-color: #fff;
+  opacity: .8; 
+  height: 5vh;
+  width: 33%;
+  float: left;
+  border-radius: 5px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+
+
+#column1.clicked, 
+#column2.clicked, 
+#column3.clicked {
+  height: auto;
+}
+
+#enjoy { 
+  background-color: #000; 
+  color: #fff; 
+  opacity: .8; 
+}
+
+footer { 
+  font-size: .75em; 
+}
+
+footer ul { 
+  list-style-type: none; 
+} 
+
+footer ul li { 
+  padding-top: 7px; 
+}
+
+/* collapse 3 to 1 col at 700px  */
+
+@media screen and (max-width: 700px) {
+div {
+    width: 100%;
+  }
+  nav {
+    font-size: .85em;
+    padding-top: .45em; 
+  }
+}
+
+
+/* removes nav, alters div col styling, positions footer at very small screen sizes  */
+@media screen and (max-width: 575px) {
+  nav {
+    display: none;
+  }
+  div {
+    border: solid .1em;
+    border-radius: .35em;
+   }
+}
+
